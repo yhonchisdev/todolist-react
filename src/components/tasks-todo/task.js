@@ -14,6 +14,7 @@ function Task({ task }) {
       <span className="text-base text-darkPastelPurple font-normal">{task.text}</span>
       <div className="flex items-center space-x-2">
         <button
+          data-testid="complete-task"
           onClick={handleComplete}
           className="flex items-center justify-center w-8 h-8 bg-chineseBlack rounded-md duration-150 group active:bg-persianIndigo disabled:opacity-75 disabled:active:bg-chineseBlack">
           <img
@@ -23,6 +24,7 @@ function Task({ task }) {
           />
         </button>
         <button
+          data-testid="delete-task"
           onClick={handleDelete}
           className="flex items-center justify-center w-8 h-8 bg-chineseBlack rounded-md duration-150 group active:bg-persianIndigo disabled:opacity-75 disabled:active:bg-chineseBlack">
           <img

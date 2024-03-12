@@ -45,6 +45,7 @@ function InputForm() {
         placeholder="Add a new task"
       />
       <button
+        data-testid="add-item"
         onClick={handleSubmit}
         className="flex items-center justify-center w-10 h-10 bg-darkPastelPurple rounded-md duration-150 group active:bg-persianIndigo disabled:opacity-50 disabled:active:bg-darkPastelPurple">
         <img

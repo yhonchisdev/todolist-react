@@ -7,7 +7,7 @@ function AllDone() {
   return (
     <div className="space-y-3">
       <h3 className="text-base text-white font-normal">Done - {tasksComplete.length}</h3>
-      <div className="space-y-4">
+      <div data-testid="tasks-done" className="space-y-4">
         {tasksComplete.length === 0 && (
           <span className="block text-base text-mediumAquamarine text-center font-normal">
             Any tasks complete
