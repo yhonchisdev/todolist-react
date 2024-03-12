@@ -1,8 +1,8 @@
-import AllDone from "./components/all-done";
-import Header from "./components/header";
-import InputForm from "./components/input-form";
-import TasksToDo from "./components/tasks-todo/tasks-todo";
-import { ToDoProvider } from "./providers/todo.provider";
+import AllDone from './components/all-done';
+import Header from './components/header';
+import InputForm from './components/input-form';
+import TasksToDo from './components/tasks-todo/tasks-todo';
+import { ToDoProvider } from './providers/todo.provider';
 
 function App() {
   return (

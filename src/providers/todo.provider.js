@@ -1,9 +1,9 @@
-const { useState, useMemo, createContext, useContext } = require("react");
+import { useState, useMemo, createContext, useContext } from 'react';
 
 const ToDoContext = createContext();
 
 export function ToDoProvider(props) {
-  const DB_NAME = "todo_list";
+  const DB_NAME = 'todo_list';
   const storage = localStorage.getItem(DB_NAME);
   const data = JSON.parse(storage) ?? [];
 
@@ -54,7 +54,7 @@ export function ToDoProvider(props) {
         tasksComplete,
         onAdd: handleAdd,
         onDelete: handleDelete,
-        onComplete: handleComplete,
+        onComplete: handleComplete
       }}
       {...props}
     />
